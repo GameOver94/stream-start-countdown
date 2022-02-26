@@ -1,31 +1,29 @@
 {
-  "name": "start-timer-bundle",
+  "name": "stream-start-countdown",
   "version": "0.1.0",
-  "description": "Contdown timer for stream start",
+  "description": "Contdown for stream start",
   "homepage": "",
   "author": {
     "name": "Patrick Harrer",
-    "email": "patrick.harrer94@hotmail.com",
-    "url": ""
+    "email": "patrick.harrer94@hotmail.com"
   },
   "files": [
     "dashboard",
-    "graphics",
-    "extension.js",
-    "extension"
+    "graphics"
   ],
   "keywords": [
-    "",
+    "stream",
+    "countdown",
     "nodecg-bundle"
   ],
   "nodecg": {
     "compatibleRange": "^1.8.1",
     "dashboardPanels": [
       {
-        "name": "start-timer-panel",
-        "title": "Start Timer Panel",
+        "name": "countdown-panel",
+        "title": "Sream Countdwon Panel",
         "width": 3,
-        "file": "start-timer-panel.html",
+        "file": "countdown-panel.html",
         "headerColor": "#525F78"
       }
     ],
