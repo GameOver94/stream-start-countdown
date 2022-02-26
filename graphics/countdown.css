@@ -1,0 +1,50 @@
+body {
+    background-color: gray;
+}
+
+.timer {
+    font-family: Orbitron;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.timer>div>span {
+    display: block;
+    text-align: center;
+}
+
+.timer .default-text {
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.timer .countdown-container {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.timer .countdown-container .countdown-heading {
+    font-size: 13px;
+    margin: 3px;
+}
+
+.timer .countdown-container .countdown-value {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    width: 120px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
+}
+
+.timer .countdown-container .countdown-value.millisecons {
+    width: 180px;
+}
+
+.timer .countdown-container .countdown-colon {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4)
+}

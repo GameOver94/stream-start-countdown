@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Start Timer</title>
+</head>
+
+<body>
+    <p>
+        This is a timer for starting the stream. Set the time you want to start and start the timer.
+    </p>
+
+    <p>
+        Window size : 640 x 100 px
+    </p>
+
+    <p>
+        Current Time: <span id="datetime"></span>
+    </p>
+
+    <div>
+        <span>Start Time: </span>
+        <input type="time" id="time">
+
+        <button onclick="update()">Update</button>
+    </div>
+
+
+    <script>
+        // Update time every 1 second
+        var timerInterval = setInterval(updateTime, 1000);
+
+        // show current time
+        function updateTime() {
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+        }
+
+
+        // Updtate Timer
+        const timeInput = document.getElementById('time');
+
+        function update() {
+            const data = {
+                "time": timeInput.value,
+            }
+            nodecg.sendMessage('startTimer', data);
+        }
+    </script>
+</body>
+
+</html>

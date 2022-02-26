@@ -1,0 +1,43 @@
+{
+  "name": "start-timer-bundle",
+  "version": "0.1.0",
+  "description": "Contdown timer for stream start",
+  "homepage": "",
+  "author": {
+    "name": "Patrick Harrer",
+    "email": "patrick.harrer94@hotmail.com",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.8.1",
+    "dashboardPanels": [
+      {
+        "name": "start-timer-panel",
+        "title": "Start Timer Panel",
+        "width": 3,
+        "file": "start-timer-panel.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 640,
+        "height": 100,
+        "singleInstance": true
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "Apache-2.0"
+}
